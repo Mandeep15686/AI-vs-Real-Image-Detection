@@ -1,0 +1,10 @@
+{
+  "model": "RandomForest",
+  "accuracy": 0.7555,
+  "auc_roc": 0.8283,
+  "avg_precision": 0.7754,
+  "TP": 982,
+  "TN": 1431,
+  "FP": 347,
+  "FN": 434
+}

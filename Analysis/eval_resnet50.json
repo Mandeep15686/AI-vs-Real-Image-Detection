@@ -1,0 +1,10 @@
+{
+  "model": "ResNet50",
+  "accuracy": 0.9693,
+  "auc_roc": 0.9939,
+  "avg_precision": 0.9937,
+  "TP": 1370,
+  "TN": 1726,
+  "FP": 52,
+  "FN": 46
+}

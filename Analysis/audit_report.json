@@ -1,0 +1,46 @@
+{
+  "ai_images": {
+    "label": "AI-Generated",
+    "folder": "C:\\Users\\shash\\Downloads\\DATASET\\DATASET\\AI",
+    "total_files": 11846,
+    "image_files": 11845,
+    "non_image": 0,
+    "formats": {
+      ".jpg": 11692,
+      ".png": 114,
+      ".jpeg": 36,
+      ".webp": 3
+    },
+    "file_list": [],
+    "empty_files": [],
+    "hidden_files": [
+      "C:\\Users\\shash\\Downloads\\DATASET\\DATASET\\AI\\.amazonaws.com2Fpublic2Fimages2Ff89de3bb-279b-42c9-9822-a653fb5b21e6_600x480.png"
+    ],
+    "min_size_kb": 6.24,
+    "max_size_kb": 5494.32,
+    "mean_size_kb": 165.76,
+    "total_size_mb": 1917.43
+  },
+  "real_images": {
+    "label": "Real",
+    "folder": "C:\\Users\\shash\\Downloads\\DATASET\\DATASET\\REAL",
+    "total_files": 10436,
+    "image_files": 9434,
+    "non_image": 1001,
+    "formats": {
+      ".jpg": 1378,
+      ".png": 8034,
+      ".jpeg": 21,
+      ".gif": 1
+    },
+    "file_list": [],
+    "empty_files": [],
+    "hidden_files": [
+      "C:\\Users\\shash\\Downloads\\DATASET\\DATASET\\REAL\\.amazonaws.com2Fpublic2Fimages2Fcb32a00a-bf52-48fe-9ba6-4e21cf4c1c57_800x800.png"
+    ],
+    "min_size_kb": 4.1,
+    "max_size_kb": 9956.4,
+    "mean_size_kb": 108.07,
+    "total_size_mb": 995.63
+  }
+}
