@@ -1,0 +1,1 @@
+pip install Pillow numpy pandas matplotlib imagehash scikit-learn
