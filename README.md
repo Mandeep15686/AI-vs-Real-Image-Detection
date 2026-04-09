@@ -1,7 +1,7 @@
 # 🔍 AI vs Real Image Detection — DWDM Project
 
 > **Data-Driven Detection and Analysis of AI-Generated vs Real Visual Media**  
-> A complete end-to-end machine learning pipeline built for the Data Warehousing & Data Mining (DWDM) course — 2024–25
+> A complete end-to-end machine learning pipeline built for the Data Warehousing & Data Mining (DWDM) course — 2025–26
 
 ---
 
@@ -30,50 +30,51 @@ data collection → cleaning → EDA → GAN generation → model training → e
 
 > Best checkpoint saved at Epoch 17 (Val AUC = 0.9946)
 
----
+## 📂 Project Structure
 
-## 📁 Project Structure
+```
 DWDM-AI-vs-Real-Image-Detection/
 │
-├── 📂 dataset/
-│   ├── ai_images/                  ← Raw AI-generated images
-│   └── real_images/                ← Raw real photographs
+├── dataset/
+│   ├── ai_images/
+│   └── real_images/
 │
-├── 📂 cleaned_data/
-│   ├── standardised/               ← 224×224 RGB JPEG images
-│   ├── splits/                     ← Train / Val / Test splits
-│   │   ├── train/  (ai/ + real/)
-│   │   ├── val/    (ai/ + real/)
-│   │   └── test/   (ai/ + real/)
-│   └── eda_plots/                  ← EDA visualisations
+├── cleaned_data/
+│   ├── standardised/
+│   ├── splits/
+│   │   ├── train/
+│   │   ├── val/
+│   │   └── test/
+│   └── eda_plots/
 │
-├── 📂 models/
-│   ├── resnet50_best.pth           ← Best ResNet50 checkpoint
-│   ├── random_forest.pkl           ← Trained Random Forest
-│   ├── gan_generator_final.pth     ← Trained DCGAN Generator
+├── models/
+│   ├── resnet50_best.pth
+│   ├── random_forest.pkl
+│   ├── gan_generator_final.pth
 │   └── training_curves.png
 │
-├── 📂 gan_outputs/
-│   ├── training_samples/           ← GAN sample grids per epoch
-│   └── generated_images/           ← Final GAN-generated images
+├── gan_outputs/
+│   ├── training_samples/
+│   └── generated_images/
 │
-├── step1_data_audit.py             ← Scan & audit raw dataset
-├── step2_validate_images.py        ← Detect corrupt/invalid images
-├── step3_remove_duplicates.py      ← MD5 + pHash deduplication
-├── step4_standardise_images.py     ← Resize, convert, strip EXIF
-├── step5_eda.py                    ← Exploratory data analysis
-├── step6_train_val_test_split.py   ← Stratified 70/15/15 split
+├── step1_data_audit.py
+├── step2_validate_images.py
+├── step3_remove_duplicates.py
+├── step4_standardise_images.py
+├── step5_eda.py
+├── step6_train_val_test_split.py
 │
-├── gan_generator.py                ← DCGAN training & generation
-├── gan_evaluate.py                 ← GAN quality evaluation + integration
-├── train_model.py                  ← Train ResNet50 + Random Forest
-├── evaluate_model.py               ← Test set evaluation + plots
-├── predict.py                      ← CLI inference on new images
-├── quick_check.py                  ← Interactive image checker
+├── gan_generator.py
+├── gan_evaluate.py
+├── train_model.py
+├── evaluate_model.py
+├── predict.py
+├── quick_check.py
 │
 ├── requirements.txt
 └── README.md
----
+```
+
 
 ## 🗂️ Dataset
 
@@ -226,7 +227,7 @@ python predict.py --folder "path/to/folder/" --output results.csv
 
 ## 📄 License
 
-This project is submitted as an academic project for the DWDM course (2024–25).  
+This project is submitted as an academic project for the DWDM course (2025–26).  
 For educational use only.
 
 ---
