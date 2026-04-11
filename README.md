@@ -198,15 +198,56 @@ python predict.py --folder "path/to/folder/" --output results.csv
 
 ---
 
-## 👥 Team
+## 👥 Team & Contribution Breakdown
 
-| Name | Role |
-|------|------|
-| **Rahul** | Data Collection & Preprocessing |
-| **Mandeep** | Data Cleaning & EDA |
-| **Shashi Kant** | Model Training & Evaluation |
-| **Akshat** | Feature Engineering & Random Forest |
-| **Prathamesh** | ResNet50 CNN & Report Writing |
+This project was executed using a structured **end-to-end ML pipeline** (data → cleaning → modeling → evaluation → deployment), with clearly defined ownership to ensure scalability and reproducibility.
+
+### 🔹 Mandeep Singh — *Data Engineer & Pipeline Developer*
+- Collected and curated large-scale dataset (**21K+ images**) from multiple sources (COCO, Kaggle, etc.)
+- Designed and implemented **data preprocessing pipeline**
+- Automated dataset organization, validation, and preprocessing workflows
+- Ensured data consistency across **AI-generated vs real image classes**
+
+---
+
+### 🔹 Shashi Kant Kumar — *Data Cleaning & EDA Specialist*
+- Built a **6-step data cleaning pipeline** (audit, validation, duplicate removal, standardization)
+- Implemented **image validation, corruption detection, and deduplication (MD5 + pHash)**
+- Performed **Exploratory Data Analysis (EDA)** including pixel distribution, brightness, and RGB statistics
+- Generated insights to improve model training quality and dataset reliability
+
+---
+
+### 🔹 Rahul Dewangna  — *ML Engineer (Training & Evaluation)*
+- Developed and trained deep learning models (**ResNet50 transfer learning pipeline**)
+- Implemented **training loops, validation strategy, and performance tracking**
+- Evaluated models using **Accuracy, AUC-ROC, Precision metrics**
+- Managed **model checkpoints and experiment tracking**
+
+---
+
+### 🔹 Akshat Agarwal — *Feature Engineering & Classical ML Specialist*
+- Designed **15 handcrafted features** (RGB stats, entropy, Laplacian variance, etc.)
+- Built and optimized **Random Forest classifier (300 trees)**
+- Performed feature analysis and model comparison with deep learning models
+- Contributed to **ensemble modeling strategy**
+
+---
+
+### 🔹 Prathamesh  — *Deep Learning & Documentation Lead*
+- Implemented **ResNet50 architecture customization and fine-tuning**
+- Developed **transfer learning pipeline (frozen + fine-tuned phases)**
+- Assisted in integrating **GAN-generated data augmentation**
+- Led **technical documentation, report writing, and result visualization**
+
+---
+
+## 🧠 Collaboration Highlights
+
+- Built a complete **DWDM pipeline (data → GAN → ML models → evaluation → inference)**
+- Combined **Deep Learning (ResNet50)** + **Traditional ML (Random Forest)** + **GAN augmentation**
+- Achieved **~97% accuracy and ~0.995 AUC using ensemble modeling**
+- Maintained **modular, reproducible, and scalable codebase**
 
 ---
 
